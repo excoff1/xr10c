@@ -7,10 +7,12 @@
 	text-decoration: none;
 }
 body {
-	height: 100vh;
+	min-height: 100vh;
 	background-color: white no-repeat; 
 	background-size: cover;
 	background-position: center;
+	display: flex;
+	flex-direction: column;
 }
 header {
 	position: fixed;
@@ -47,7 +49,7 @@ button  {
 	
 	float: right;
     display: block;
-	padding: 15px;
+    padding: 15;
 	outline : none ;
 	border: none;
 	border-radius: 25px;
@@ -56,10 +58,83 @@ button  {
 	color: white;
 	font-weight: 600;
 	font-size: 20px;
-	letter-spacing: 2px;
 	align-items: center;
 	right: 40;
 	left:20;
 	top: 20;
 	margin: 5
+}
+p { font-family: sans-serif;
+	align-items: center;
+	font-weight: 900;
+}
+h1 {
+	font-family: sans-serif;
+	align-items: center;
+	font-weight:  900;
+}
+.container {
+	flex: 1;
+}
+footer{
+	background-color: coral;
+	color: black;
+}
+footer a {
+	color:black;
+	font-size: 1.7rem;
+	transition: 0.5;
+}
+footer a:hover{
+	text-decoration: underline;
+	
+}
+foooter ft.tittle {
+	font-size: 2.5rem;
+	padding-bottom: 0.5rem;
+}
+.ft-main {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 1.5rem;
+	justify-content: space-around;
+}
+
+.ft-main-item {
+	padding: 1.5rem;
+	min-width: 13rem;
+}
+.ft-social {
+	color: black;
+	padding: 0rem 2rem 1.5rem;
+}
+.ft-social-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px #000 solid;
+	padding-top: 1.5rem;
+}
+.ft-social-list i {
+	font-size: 2.5rem;
+	transition: 0.3s;
+}
+.ft-social-list i:hover {
+	transform: translateY(-0.5rem);
+	color: blueviolet;
+}
+.fl-legal{
+	padding: 1rem 2rem;
+	background-color:yellow;
+	display: flex;
+		align-items:center;
+	flex-wrap: wrap;
+}
+.fl-legal-list {
+	margin-left: 1.5rem;
+	white-space: nowrap;
+}
+.fl-legal-list-li:nth-child(2) {
+	flex:1;
+	background: 
 }
